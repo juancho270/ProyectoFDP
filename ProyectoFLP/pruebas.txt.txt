@@ -1,0 +1,33 @@
+#Pruebas if 
+ruby if (x == 4) then puts "x es 4" ; elsif (x == 3) puts "x no es 2" ; puts "x es 3"; elsif (x == 10) then puts "x Es 10"; else 1; end end
+ruby if (x == 4) then puts "x es 4" ; elsif (x == 10) puts "x no es 2" ; puts "x es 10"; elsif (x == 5) then puts "x Es 5"; else 1; end end
+ruby if (x == 10) then puts "x es 10"; else puts "x no es 10"; end end
+
+#Prubas declar + if
+ruby 
+declare a;
+a = 10;
+if (a == 10) 
+then puts "a es 10"; 
+else puts "a no es 10"; 
+end end 
+
+ruby 
+declare a;
+a = 5;
+if (a == 10) 
+then puts "a es 10"; 
+else puts "a no es 10"; 
+end end 
+
+ruby
+declare a;
+a = 3 ;
+if (a > 5 ) then
+puts a;
+elsif (a < 3 ) then
+puts "mundo" ;
+else
+puts "hola" ;
+end
+end
