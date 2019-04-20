@@ -3,6 +3,7 @@ ruby if (x == 4) then puts "x es 4" ; elsif (x == 3) puts "x no es 2" ; puts "x 
 ruby if (x == 4) then puts "x es 4" ; elsif (x == 10) puts "x no es 2" ; puts "x es 10"; elsif (x == 5) then puts "x Es 5"; else 1; end end
 ruby if (x == 10) then puts "x es 10"; else puts "x no es 10"; end end
 
+#-------------------------------------------------------------------------------------------------------------------------
 #Prubas declar + if
 ruby 
 declare a;
@@ -29,5 +30,51 @@ elsif (a < 3 ) then
 puts "mundo" ;
 else
 puts "hola" ;
+end
+end
+
+
+#-------------------------------------------------------------------------------------------------------------------------
+#Pruebas unless
+ruby
+unless true then
+puts 4 ;
+else
+puts "hola mundo" ;
+else
+puts "otro else" ;
+end
+
+ruby
+unless true then
+puts 4 ;
+else
+puts "hola mundo" ;
+end
+end
+
+#-------------------------------------------------------------------------------------------------------------------------
+#Pruebas while
+
+ruby
+declare x;
+x = 0 ;
+while (x < 10 ) do
+puts x;
+x += 1 ;
+end
+end
+
+#-------------------------------------------------------------------------------------------------------------------------
+#Pruebas for
+ruby
+for x in (( 1 .. 10 ) step 2 ) do
+puts x;
+end
+end
+
+ruby
+for x in [ 1 , 2 , 3 ] do
+puts x;
 end
 end
