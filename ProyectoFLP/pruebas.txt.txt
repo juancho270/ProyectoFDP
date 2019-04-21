@@ -1,3 +1,20 @@
+#Operaciones
+
+ruby puts ( 1 +( 2 +( 3 + 4 ))); end
+ruby puts (( 1 + 2 )+( 3 + 4 )); end
+ruby puts (( 1 +( 2 + 3 ))+ 4 ); end
+ruby puts( "hola" + " mundo" ); end
+ruby puts ([ "hola" ]+[ "mundo" ]); end
+ruby puts ( "hola" + 2 ); end
+ruby puts ( 2 + "hola" ); end
+ruby puts ( "hola" * 2 ); end
+ruby puts ( 5 * 2 ); end
+ruby puts ( 5 - 2 ); end
+ruby puts ( 4 / 2 ); end
+ruby declare a; a = 3 ; puts (a / " mundo" ); end
+ruby puts ([ 1 , 2 ]* 2 ); end
+
+#----------------------------------------------------------------------------------
 #Pruebas if 
 ruby if (x == 4) then puts "x es 4" ; elsif (x == 3) puts "x no es 2" ; puts "x es 3"; elsif (x == 10) then puts "x Es 10"; else 1; end end
 ruby if (x == 4) then puts "x es 4" ; elsif (x == 10) puts "x no es 2" ; puts "x es 10"; elsif (x == 5) then puts "x Es 5"; else 1; end end
@@ -33,6 +50,155 @@ puts "hola" ;
 end
 end
 
+#d no definida
+ruby
+declare a,b,c;
+b = 6 ;
+c = 10 ;
+puts a,b,d;
+end
+
+#Pruebas simple exp---------------------------------------------------------------
+ruby
+declare a;
+#id a, assign 5 (calls '())
+a = 5 ;
+puts a;
+#id a, assign-and += 1 (calls '())
+a += 1 ;
+puts a;
+end
+
+ ruby
+declare b;
+b = 1;
+b += 2;
+puts b;
+end
+
+ruby
+def print (val)
+puts val;
+end
+# id print, calls '("...")
+print( "hola mundo" );
+end
+
+ruby
+def add1 (val)
+val += 1 ;
+return val;
+end
+add1 ( 100 ); # id: add1, calls '(100)
+end
+
+ruby
+declare a;
+a = [[1,2],3] ;
+puts (a[0][0]);
+end
+
+ruby
+declare a;
+a = [1,2] ;
+puts (a[0]);
+end
+
+#funciones --------------------------------------------------------------------------
+ruby
+def fact (n)
+if (n == 0 ) then
+return 1 ;
+else
+puts "el valor de n es " ,n;
+return (n * (fact ((n - 1 ))));
+end
+end
+puts "el factorial de 5 es" ,
+(fact( 5 ));
+end
+
+ruby
+def fibo (n)
+if (n <= 2 ) then
+return 1 ;
+else
+declare left,right;
+left = (n - 1 );
+right = (n - 2 );
+return ((fibo (left))
++ (fibo (right)));
+end
+end
+puts (fibo( 10 ));
+end
+
+ruby
+def to_text (num)
+declare text;
+text = [ "cero" , "uno" ,
+"dos" , "tres" ,
+"cuatro" , "cinco" ,
+"seis" , "siete" ,
+"ocho" , "nueve" ];
+return (text[num]);
+end
+to_text ( 5 );
+end
+
+ruby
+def hola ()
+return "mundo" ;
+end
+puts hola ;
+end
+
+#----------------------------------------------------------------------------------
+#pruebas if
+
+ruby if (x == 10) then puts "el valor de x es", x; else puts "ese no es el valor de x"; end end
+
+ruby
+declare x;
+x = 3 ;
+if (x > 5 ) then
+puts x;
+elsif (x < 3 ) then
+puts "mundo" ;
+else
+puts "hola" ;
+else
+puts "otro else";
+end
+end
+
+ruby
+declare x;
+x = 10 ;
+if (x > 5 ) then
+puts x;
+elsif (x < 3 ) then
+puts "mundo" ;
+else
+puts "hola" ;
+else
+puts "otro else";
+end
+end
+
+ruby
+declare x;
+x = 2 ;
+if (x > 5 ) then
+puts x;
+elsif (x < 3 ) then
+puts "mundo" ;
+else
+puts "hola" ;
+else
+puts "otro else";
+end
+end
 
 #-------------------------------------------------------------------------------------------------------------------------
 #Pruebas unless
@@ -46,6 +212,12 @@ puts "otro else" ;
 end
 
 ruby
+unless false then
+puts 4 ;
+end
+end
+
+ruby
 unless true then
 puts 4 ;
 else
@@ -54,12 +226,21 @@ end
 end
 
 #-------------------------------------------------------------------------------------------------------------------------
-#Pruebas while
+#Pruebas while y until
 
 ruby
 declare x;
 x = 0 ;
 while (x < 10 ) do
+puts x;
+x += 1 ;
+end
+end
+
+ruby
+declare x;
+x = 0 ;
+until (x >= 10 ) do
 puts x;
 x += 1 ;
 end
@@ -78,3 +259,37 @@ for x in [ 1 , 2 , 3 ] do
 puts x;
 end
 end
+
+ruby
+for x in ( 1 ... 6 ) do
+puts x;
+end
+end
+
+ruby
+for x in ( 1 .. 6 ) do
+puts x;
+end
+end
+
+ruby
+for x in (( 1 .. 10 ) step 2 ) do
+puts x;
+end
+end
+
+ruby
+for x in [ 1 , 2 , 3 ] do
+puts x;
+end
+end
+
+ruby
+declare a;
+a = [ 1 , 2 , 3 ];
+for x in a do
+puts x;
+end
+end
+
+#-----------------------------------------------------------------------------------
