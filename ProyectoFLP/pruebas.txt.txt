@@ -153,6 +153,16 @@ end
 puts hola ;
 end
 
+ruby
+def to_text (num,val)
+return val; end
+to_text ( 5,4 );
+end
+
+ruby
+def to_text (num,val)
+return (num + val); end
+to_text ( 5,4 );
 #----------------------------------------------------------------------------------
 #pruebas if
 
